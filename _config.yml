@@ -1,0 +1,7 @@
+name: My Jekyll Website
+collections:
+    events:
+        output: false
+    channels:
+        output: false
+url: "https://gdgcloud.in"

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.push {
+    flex: 1;
+}
+
+.footer {
+    max-height: 50em;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #eeeeee;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.parallax{
+    background-image: url("../res/bg.png");
+    min-height: 675px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    margin: 0;
+    position: relative;
+}
+
+@media (max-width:641px)  {
+    .parallax{
+        background-image: url("../res/bg.png");
+        min-height: 200px;
+        background-attachment: scroll;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 100% 100%  ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        margin: 0;
+        position: relative;
+    }
+}
+
+
+.text-box{
+	height: auto;
+	padding: 50px;
+}
+
+.blog-posts {
+    margin-top: 10vh;
+}
+
+@media
+only screen and (max-width: 1000px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr { border: 1px solid #ccc; }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 200px;
+    margin-left: 150px;
+  }
+  td:before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    width: 200px;
+    padding-right: 40px;
+    white-space: nowrap;
+    margin-left: -150px;
+  }
+  td:nth-of-type(1):before { content: "Event"; }
+  td:nth-of-type(2):before { content: "Type"; }
+  td:nth-of-type(3):before { content: "Date"; }
+  td:nth-of-type(4):before { content: "Location";}
+  td:nth-of-type(5):before { content: "Description"; }
+}
+
+.card-header-title {
+    padding-bottom: 0rem;
+}
+
+.author-name {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 4px 4px rgba(10, 10, 10, 0.1);
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-footer {
+    margin-top: auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 1.5rem;
+}
